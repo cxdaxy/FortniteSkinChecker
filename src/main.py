@@ -11,7 +11,7 @@ from config import Settings
 class Bot(commands.Bot):
     def __init__(self) -> None:
         super().__init__(
-            command_prefix=Settings.BOT_PREFIX, intents=discord.Intents.all()
+            command_prefix=Settings.BOT_PREFIX, intents=discord.Intents.default()
         )
 
     async def on_ready(self) -> None:
