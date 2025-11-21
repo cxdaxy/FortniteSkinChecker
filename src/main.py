@@ -2,10 +2,11 @@ import os
 import pathlib
 
 import discord
+import sentry_sdk
 from discord.ext import commands
 
 from config import Settings
-import sentry_sdk
+
 
 class Bot(commands.Bot):
     def __init__(self) -> None:
